@@ -1,44 +1,51 @@
-# B.Tech 4th Year Project Submission  
-### IILM University, Greater Noida
+🕶️ EDITH - AI Voice Assistant
+EDITH is a fully functional, Python-based personal desktop voice assistant. Inspired by the Marvel Cinematic Universe, this project uses speech recognition and text-to-speech to automate daily tasks and provide a hands-free interactive experience.
 
-This repository is used for submitting and maintaining the **4th Year B.Tech Project** for evaluation and academic record purposes.
+✅ Status: Completed & Fully Functional
 
----
+🚀 Key Features
+Intelligent Greeting: Wishes the user (Morning/Afternoon/Evening) based on the system's current time.
 
-## Project Upload Instructions
+Voice Recognition: Captures human voice and converts it into text commands using the SpeechRecognition library.
 
-1. Open your assigned **GitHub repository**.
-2. Click on **Add file → Upload files**.
-3. Upload your **project folder and files**.
-4. Add a proper **commit message**, for example:
+Information Retrieval: Searches and reads out short summaries of any topic directly from Wikipedia.
 
-```
-Project Submission – Name / Section
-```
+Web Automation: Voice-activated commands to launch Google, YouTube, Instagram, Facebook, and Spotify.
 
-5. Click **Commit changes**.
+Local Media Playback: Opens specific music files and movie folders directly from your computer's hard drive.
 
----
+Smart Search: Can perform direct searches on YouTube and Spotify, or default to Google for any other query.
 
-## Important Guidelines
+🛠️ Tech Stack & Libraries
+Language: Python 3.11
 
-- Upload your **complete project files** inside the assigned repository.
-- Follow the **naming conventions specified by the faculty**.
-- Maintain a **clear folder structure** for better evaluation.
-- Ensure your **README file explains the project clearly**.
-- Submit your project **before the deadline** to avoid evaluation issues.
+Text-to-Speech: pyttsx3 (Using Microsoft SAPI5 engine)
 
----
+Speech-to-Text: SpeechRecognition (Requires PyAudio for microphone access)
 
-## Academic Information
+Data Fetching: wikipedia library
 
-**Institution:** IILM University, Greater Noida  
-**Program:** B.Tech  
-**Year:** 4th Year  
-**Purpose:** Final Project Submission and Evaluation Record
+System Control: webbrowser & os modules
 
----
+📦 Installation & Setup
+Download Project:
+Download the My EDITH.py file and this README.md into a single folder.
 
-## Note
+Install Required Libraries:
+Open your terminal and run the following command to install all dependencies:
 
-This repository is part of the **academic project submission system** used by the university to track and evaluate student projects.
+Bash
+pip install pyttsx3 speechrecognition wikipedia pyaudio
+(Note: PyAudio is required by the SpeechRecognition library to access your microphone).
+
+Update File Paths:
+Open My EDITH.py and update the file paths for your music and movies (e.g., C:\Users\...\Music) to match your local folders.
+
+Launch the Assistant:
+
+Bash
+python "My EDITH.py"
+👨‍💻 Author
+Pritam Sarkar B.Tech in Computer Science (AI & Machine Learning)
+
+IILM University, Greater Noida
