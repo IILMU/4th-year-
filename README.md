@@ -1,51 +1,53 @@
-🕶️ EDITH - AI Voice Assistant
-EDITH is a fully functional, Python-based personal desktop voice assistant. Inspired by the Marvel Cinematic Universe, this project uses speech recognition and text-to-speech to automate daily tasks and provide a hands-free interactive experience.
+🎵 AI Music Discovery Hub (WIP 🚧)
+AI Music Discovery Hub is a web-based application built with Streamlit that integrates with the Spotify Web API. It allows users to search for tracks, find similar music from artists, and explore different moods.
 
-✅ Status: Completed & Fully Functional
+⚠️ Status: Under Development (Incomplete)
 
-🚀 Key Features
-Intelligent Greeting: Wishes the user (Morning/Afternoon/Evening) based on the system's current time.
+🔑 API Integration
+This project uses the Spotify API via the spotipy library to:
 
-Voice Recognition: Captures human voice and converts it into text commands using the SpeechRecognition library.
+Search for track metadata.
 
-Information Retrieval: Searches and reads out short summaries of any topic directly from Wikipedia.
+Fetch artist-specific recommendations.
 
-Web Automation: Voice-activated commands to launch Google, YouTube, Instagram, Facebook, and Spotify.
+Retrieve high-quality album artwork (thumbnails).
 
-Local Media Playback: Opens specific music files and movie folders directly from your computer's hard drive.
+Link directly to Spotify for streaming.
 
-Smart Search: Can perform direct searches on YouTube and Spotify, or default to Google for any other query.
+🛠️ Tech Stack
 
-🛠️ Tech Stack & Libraries
-Language: Python 3.11
+Frontend: Streamlit.
 
-Text-to-Speech: pyttsx3 (Using Microsoft SAPI5 engine)
 
-Speech-to-Text: SpeechRecognition (Requires PyAudio for microphone access)
+Backend: Python 3.11.
 
-Data Fetching: wikipedia library
 
-System Control: webbrowser & os modules
+API Wrapper: Spotipy.
 
-📦 Installation & Setup
-Download Project:
-Download the My EDITH.py file and this README.md into a single folder.
+📦 Current Features
 
-Install Required Libraries:
-Open your terminal and run the following command to install all dependencies:
+Similar Songs: Search a track to see its details and more songs by the same artist.
 
-Bash
-pip install pyttsx3 speechrecognition wikipedia pyaudio
-(Note: PyAudio is required by the SpeechRecognition library to access your microphone).
 
-Update File Paths:
-Open My EDITH.py and update the file paths for your music and movies (e.g., C:\Users\...\Music) to match your local folders.
+Mood Explorer: Grid-based display (4 columns) for tracks based on mood keywords like 'Chill' or 'Gym'.
 
-Launch the Assistant:
 
-Bash
-python "My EDITH.py"
+Error Handling: Basic try-except blocks to catch authentication or search errors.
+
+🔧 Installation & API Setup
+Clone the repo.
+
+Install requirements: pip install streamlit spotipy.
+
+Important: You must provide your own Spotify credentials in the code:
+
+
+CLIENT_ID = "your_id_here" 
+
+
+CLIENT_SECRET = "your_secret_here" 
+
+Run the app: streamlit run app.py.
+
 👨‍💻 Author
-Pritam Sarkar B.Tech in Computer Science (AI & Machine Learning)
-
-IILM University, Greater Noida
+Pritam Sarkar (B.Tech CSE - AI & ML)
