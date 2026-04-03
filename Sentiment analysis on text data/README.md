@@ -4,6 +4,8 @@
 
 This project focuses on **Sentiment Analysis of text data** using Machine Learning techniques. The goal is to classify input text (such as movie reviews) into sentiment categories like **positive** or **negative**.
 
+The dataset utilized for model training is IMDB movie review dataset freely avaliable on kaggle.
+
 The system includes:
 
 * Data preprocessing
@@ -38,7 +40,11 @@ The system includes:
 ---
 
 ## Evaluation matrics:
+
  Model used: Logistic Regression 
+ 
  Precision: 0.8961 
+ 
  AUC Score: 0.9607
+ 
  Accuracy: 0.8961
