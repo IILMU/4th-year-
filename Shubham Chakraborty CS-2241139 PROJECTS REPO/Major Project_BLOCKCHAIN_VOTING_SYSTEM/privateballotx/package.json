@@ -1,0 +1,27 @@
+{
+  "name": "votechain-pro-v2",
+  "version": "2.0.0",
+  "description": "VoteChain Pro v2 — Decentralized on-chain voting system",
+  "private": true,
+  "scripts": {
+    "compile":       "npx hardhat compile",
+    "test":          "npx hardhat test",
+    "test:gas":      "REPORT_GAS=true npx hardhat test",
+    "deploy:local":  "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia":"npx hardhat run scripts/deploy.js --network sepolia",
+    "verify":        "npx hardhat verify --network sepolia",
+    "node":          "npx hardhat node",
+    "clean":         "npx hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
